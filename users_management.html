@@ -9,12 +9,17 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-container">
+        <div class="header-container" id="header-container">
             <h1 class="title">Gerenciamento de Usuários</h1>
-            <button class="new-user-btn">Usuário</button>
+            <button class="new-user-btn" id="new-user-btn">Novo Usuário</button>
+            <br>
         </div>
+        <div class="users" id="users"></div>
     </header>
     <main class="main">
+        <div class="show-table">
+            <button class="show-table" id="show-table">Todos os usuários</button>
+        </div>
         <div class="user-table-container">
             <thead class="user-table-title">
                 <tr class="user-table-head-row">
@@ -24,7 +29,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="user-table-body-row">
+                <tr class="user-table-body-row" id="user-table-body-row">
                 </tr>
             </tbody>
         </div>

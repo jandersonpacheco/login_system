@@ -8,38 +8,59 @@ export let users = [
 let i = users.length
 
 document.getElementById('new-user-btn').addEventListener('click', () =>{
-    const userData = document.getElementById('header-container')
+    const userData = document.getElementById('users')
 
-    const index = i + 1
-    const fullnameLabel = label('Username: ', 'username')
-    const fullnameInput = label('username'+ index)
+    const index = i++
+    const usernameLabel = AddLabel('user' + index, 'Username: ')
+    const usernameInput = AddInput('user' + index, 'email')
+    const passwordLabel = AddLabel('user' + index, 'Password: ')
+    const passwordInput = AddInput('user1' + index, 'password')
+    const skipLabel = document.createElement('br')
 
-    userData.append(fullnameLabel, fullnameInput)
-})
+    const registerBtn = document.createElement('button')
+    registerBtn.className = 'register-btn'
+    registerBtn.id = 'register-btn'
+    registerBtn.innerText = 'Cadastrar Usuário'
 
-function usersList (username, password) {
-    const userList = {
-        username: users.username,
-        password: users.password
-    }
+    userData.append(usernameLabel, usernameInput, passwordLabel, passwordInput, skipLabel, registerBtn)
 
-    return usersList
-}
+    registerBtn.addEventListener('click', ()=>{
+        const userData = document.getElementById('users')
+        const username = usernameInput.value
+        const password = passwordInput.value
 
-function AddInput(text, id){
-    const input = document.createAttribute('input')
-    input.type = text
+        let user = {username: username, password: password}
+            if(user.username !== '' && user.password !== ''){
+                users.push(user)
+            
+                console.log(users)
+            } else{
+                alert('Preencha todos os campos!')
+            }
+    })
+}, {once: true})
+
+function AddInput(id, text){
+    const input = document.createElement('input')
     input.id = id
+    input.type = text
+    
+
+    return input
 }
 
-function AddLabel(text, id){
-    const label = document.createAttribute('label')
-    label.innerText = text
+function AddLabel(id, text){
+    const label = document.createElement('label')
     label.id = id
+    label.innerText = text
+
+    return label
 }
 
 function AddTableData(text, id){
-    const tableData = document.createAttribute('td')
+    const tableData = document.createElement('td')
     tableData.innerText = 
     tableData.id = id
+
+    return tableData
 }
