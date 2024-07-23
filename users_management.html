@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Manangement</title>
+    <title>User Management</title>
     <script src="./src/users.js" type="module" defer></script>
     <link rel="stylesheet" href="./src/style.css">
 </head>
@@ -17,21 +17,21 @@
         <div class="users" id="users"></div>
     </header>
     <main class="main">
-        <div class="show-table">
+        <div class="table-button">
             <button class="show-table" id="show-table">Todos os usuários</button>
         </div>
         <div class="user-table-container">
-            <thead class="user-table-title">
-                <tr class="user-table-head-row">
-                    <th class="table-title">Username</th>
-                    <th class="table-title">Senha</th>
-                    <th class="table-title">Delete</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="user-table-body-row" id="user-table-body-row">
-                </tr>
-            </tbody>
+            <table>
+                <thead class="user-table-title">
+                    <tr class="user-table-head-row">
+                        <th class="table-title">Username</th>
+                        <th class="table-title">Senha</th>
+                        <th class="table-title">Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="user-table-body-row" id="user-table-body-row">
+                </tbody>
+            </table>
         </div>
     </main>
 </body>
