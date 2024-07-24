@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src="./src/script.js" type="module" defer></script>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/login_style.css">
 </head>
-<body>
-    <header class="header">
-        <img class="img-header">
+<body class="main-color">
+    <header class="header"> 
+        <img src="./media/pf-logo.jpeg" class="img-header">
     </header>
     <main class="main">
         <form class="login-form">
             <div class="username-container">
-                <img class="username-img">
+                <img class="username-img" src="media/user.png">
                 <input type="email" class="username" id="username" placeholder="USERNAME">
             </div>
             <div class="password-container">
-                <img class="password-img">
+                <img class="password-img" src="media/padlocker.png">
                 <input type="password" class="password" id="password" placeholder="********">
             </div>
             <div class="button-container">
-                <button type="button" class="login-btn" id="login-btn"><img class='login-img' src="login_btn.png" alt="">LOGIN</button>
-            </div>
-            <div class="login-options">
-                <input type="checkbox" id="remember-me" name="remember-me" class="remember-me">
-                <label for="remember-me">Lembre-me</label>
-                <label for="forgot-password">Esqueceu sua senha?</label>
+                <button type="button" class="login-btn" id="login-btn"><img class='login-img' src="./media/login_btn.png">LOGIN</button>
             </div>
         </form>
+        <div class="login-options-container">
+            <div class="remember-me-container">
+                <input type="checkbox" id="remember-me" name="remember-me" class="remember-me-checkbox">
+                <label class="remember-me" for="remember-me">Relembre-me</label>
+            </div>
+            <div class="forgot-password-container">
+                <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+            </div>
     </main>
-    <footer class="footer">
-        <label>designed by <strong>Janderson Oliveira</strong></label>
-    </footer>
 </body>
 </html>

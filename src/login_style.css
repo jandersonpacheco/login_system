@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+.html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main-color{
+    background-image: url('../media/pf-bg-small.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #E60800;
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+
+}
+
+.header{
+    padding-top: 50px;
+}
+
+.img-header{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    padding: 20px
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.username-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #DDC24D;
+    padding-left: 5px; 
+    }
+
+.username-img{
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 10px;
+    opacity: 0.7;
+}
+
+.username{
+    height: 35px;
+    padding-right: 40px;
+    padding-left: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 13px;
+}
+
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #DDC24D;
+    padding-left: 5px;
+}
+
+.password-img{
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 10px;
+    opacity: 0.7;
+}
+
+.password{
+    height: 35px;
+    padding-right: 40px;
+    padding-left: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 13px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: #DDC24D;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    
+}
+
+.login-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding-right: 105px;
+    padding-left:  105px;
+    border-radius: 5px;
+    background-color: #DDC24D;
+    border-color: #DDC24D;
+    column-gap: 5px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 15px;
+}
+
+.login-img{
+    height: 25px;
+    order: 1;
+}
+
+.login-options-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+
+.remember-me-container{
+    display: flex;
+    gap: 5px;
+    padding-right: 30px
+    
+}
+
+.remember-me{
+    font-family: 'Sarala', sans-serif;
+    font-size: 13px;
+}
+
+.remember-me-checkbox{
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #DDC24D;
+    padding-left: 5px;
+}
+
+.forgot-password{
+    font-family: 'Sarala', sans-serif;
+    font-size: 13px;
+    color:#E60800;
+    text-decoration: none
+}
