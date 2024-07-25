@@ -58,7 +58,8 @@
 .btn:active {
     background-color: #DDC24D;
     box-shadow: 0 5px #6b5a10;
-    transform: translateY(4px);}
+    transform: translateY(4px);
+}
 
 .new-user-input{
     display: flex;
@@ -97,6 +98,7 @@
     padding: 8px;
     background-color: #fff;   
     font-size: 17px;
+    color: #000000;
 }
 
 .remove-btn{

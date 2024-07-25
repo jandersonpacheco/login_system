@@ -67,7 +67,7 @@ document.getElementById('show-table').addEventListener('click', function createT
         const username = addTableData(data.username,  'td-' + i)
         const password = addTableData(data.password, 'td-' + i)
         const removeUser = document.createElement('button')
-        removeUser.innerText = 'Excluir usuário'
+        removeUser.innerText = 'Remover usuário'
 
         table.appendChild(tableRow)
         tableRow.append(position, username, password, removeUser)
