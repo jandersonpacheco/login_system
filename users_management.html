@@ -5,33 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management</title>
     <script src="./src/users_management.js" type="module" defer></script>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/users_management_style.css">
 </head>
-<body>
+<body class="main-color">
     <header class="header">
-        <div class="header-container" id="header-container">
-            <h1 class="title">Gerenciamento de Usuários</h1>
-            <button class="new-user-btn" id="new-user-btn">Novo Usuário</button>
-            <br>
-        </div>
-        <div class="users" id="users"></div>
+        <h1 class="title">Gerenciamento de Usuários</h1>
+        <br>
+        
     </header>
     <main class="main">
-        <div class="table-button">
-            <button class="show-table" id="show-table">Todos os usuários</button>
+        <div class="buttons">
+            <button class="btn" id="new-user-btn"><img src="./media/new-user.png" class="new-user-img">Novo Usuário</button>
+            <button class="btn" id="show-table">Todos os usuários</button>
         </div>
+        <div class="users" id="users"></div>
         <div class="user-table-container">
-            <table>
-                <thead class="user-table-title">
-                    <tr class="user-table-head-row">
-                        <th class="table-title">.</th>
-                        <th class="table-title">Login</th>
-                        <th class="table-title">Senha</th>
-                        <th class="table-title">Delete</th>
-                    </tr>
-                </thead>
-                <tbody class="user-table-body-row" id="user-table-body-row">
-                </tbody>
+            <table id="user-table-title" class="user-table-title">
             </table>
         </div>
     </main>

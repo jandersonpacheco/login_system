@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+.html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main-color{
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #E60800;
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.title{
+    font-size: 35px;
+}
+
+.buttons{
+    display: flex;
+    column-gap: 15px;
+    padding-bottom: 20px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+
+    height: 35px;
+    border-radius: 5px;
+    background-color: #DDC24D;
+    border-color: #DDC24D;
+    cursor: pointer;
+    box-shadow: 0 3px #6b5a10;
+
+    font-family: 'Sarala', sans-serif;
+    font-size: 15px;
+    }
+
+.btn:hover {
+    background-color: #bda437
+}
+
+.btn:active {
+    background-color: #DDC24D;
+    box-shadow: 0 5px #6b5a10;
+    transform: translateY(4px);}
+
+.new-user-input{
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    padding-right: 50px;
+    padding-left: 10px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 13px;
+}
+
+.users{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 1000px;
+    gap: 10px;
+}
+
+.new-user-form{
+    font-size: 15px; 
+    font-weight: 700;   
+}
+
+.user-table-head-row{
+    background-color: #DDC24D;
+    color: #000000;
+    text-align: center;
+    font-size: 17px;
+}
+
+.user-table-body-row{
+    border-collapse: collapse;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 8px;
+    background-color: #fff;   
+    font-size: 17px;
+}
+
+.remove-btn{
+    background-color: #E60800;
+    height: 47px;
+    border-color: #E60800;
+    cursor: pointer;
+    box-shadow: 0 3px #8f0500;
+
+    font-family: 'Sarala', sans-serif;
+    font-size: 17px;
+}
+
+.remove-btn:hover {
+    background-color: #cf0f08
+}
+
+.remove-btn:active {
+    background-color: #E60800;
+    box-shadow: 0 5px #b10b05;
+    transform: translateY(2px);}
