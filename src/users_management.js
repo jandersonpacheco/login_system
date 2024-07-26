@@ -3,13 +3,16 @@ import { users } from "./users.js"
 let i = users.length
 
 document.getElementById('new-user-btn').addEventListener('click', () =>{
+    const table = document.getElementById('user-table-title') 
+    table.innerText = ''
+
     const userData = document.getElementById('users')
 
     const index = i++
     const usernameLabel = AddLabel('user' + index, 'Email: ')
     const usernameInput = AddInput('user' + index, 'email')
-    const passwordLabel = AddLabel('user' + index, 'Senha: ')
-    const passwordInput = AddInput('user' + index, 'password')
+    const passwordLabel = AddLabel('user' + index + 1, 'Senha: ')
+    const passwordInput = AddInput('user' + index + 1, 'password')
     const skipLabel = document.createElement('br')
 
     const registerBtn = document.createElement('button')
@@ -39,7 +42,7 @@ document.getElementById('new-user-btn').addEventListener('click', () =>{
                 alert('Preencha todos os campos!')
             }
     })
-}, {once: true})
+})
 
 document.getElementById('show-table').addEventListener('click', function createTable() {
     const table = document.getElementById('user-table-title') 
@@ -84,7 +87,7 @@ document.getElementById('show-table').addEventListener('click', function createT
 
         const newUserInputs = document.getElementById('users')
         if(newUserInputs !== null){
-            newUserInputs.remove()
+            newUserInputs.innerText = ''
         }
     })
 })
