@@ -20,6 +20,10 @@ module.exports = {
         rules: [{
             test: /\.css$/,
             use: [MiniCssExtractPlugin.loader, 'css-loader']
+
+        },{
+            test: /\.js$/,
+            use: ['babel-loader']
         }]
     },
     plugins: [
