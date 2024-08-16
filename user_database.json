@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "309",
+      "username": "janderson.pacheco@hotmail.com",
+      "password": "admin"
+    },
+    {
+      "id": "c331",
+      "username": "janderson.katsu@gmail.com",
+      "password": "1234"
+    }
+  ]
+}
